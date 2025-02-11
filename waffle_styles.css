@@ -1,0 +1,40 @@
+th {
+    font-weight:bold;
+}
+
+body {
+    background-color:lightskyblue;
+}
+
+td {
+    border: 1px dashed black;
+    color: darkblue
+}
+
+th {
+    border: 1px solid black;
+}
+
+.multicol{
+    column-width: 250px;
+    column-gap: 25px;
+    column-rule: 5px solid yellow;
+}
+
+section{
+    break-inside: avoid;
+}
+
+.box{
+    column-span: all;
+}
+
+legend {
+    background-color: orange;
+    color: black;
+    padding: 3px 6px;
+  }
+  
+  input {
+    margin: 0.4rem;
+  }
