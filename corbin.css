@@ -1,0 +1,84 @@
+header{
+    background-color: yellow;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    border:2px solid black;
+}
+#nav{
+    position: sticky;
+    top:0;
+
+}
+
+nav .nav-item {
+    border: 2px solid black;
+    padding: 0.5rem;
+    background-color: yellow;
+}
+body {
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto 200px auto;
+    background-color: lightblue;
+    color: black;
+}
+
+main {
+    border: 2px solid black;
+    padding: 5px;
+}
+img{
+    float:left;
+}
+/*phone img*/
+@media(maxwidth:600px){
+    .img{
+        width:20%;
+    }
+}
+.multicol-container{
+    column-count:3;
+    column-gap: 100px;
+    column-rule: 5px solid black;
+    width:100%
+}
+/*phone multicole*/
+@media(max-width:480px){
+    .multicol-container{
+        column-count: 2;
+        column-gap: 50px;
+        column-rule: 2.5px solid black;
+        width:80%
+    }
+}
+/*desktop*/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap:12px;
+}
+/*ipad*/
+@media(max-width:1024px){
+    .grid-container{
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-auto-rows: 220px;
+        gap:10px;
+    }
+}
+/*phone*/
+@media(max-width:480px){
+    .grid-container{
+        grid-template-columns:1fr;
+        grid-auto-rows: 180px;
+        gap:8px;
+    }
+}
+.grid-item{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
