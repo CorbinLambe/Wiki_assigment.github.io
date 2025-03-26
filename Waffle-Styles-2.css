@@ -82,13 +82,6 @@ nav {
     
 }
 
-@media (max-width: 1250px){
-    .item{
-        display:grid;
-        grid-template-columns: 400px;
-    }
-}
-
 @media (max-width: 1000px){ 
     .item{
         display:grid;
